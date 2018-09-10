@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func showAlert(_ sender: UIButton) {
+        print("hello")
+    }
 }
 
