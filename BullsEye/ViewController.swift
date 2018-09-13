@@ -21,7 +21,15 @@ class ViewController: UIViewController {
         
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         
-// alert.addAction(action: UIAlertAction)
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion:  nil)
+    }
+    @IBAction func knockKnock(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Who's there?", message: "Who's there?", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "I did it", style: .default, handler: nil)
+        
         alert.addAction(action)
         
         present(alert, animated: true, completion:  nil)
